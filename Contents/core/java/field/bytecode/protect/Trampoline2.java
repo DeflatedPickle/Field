@@ -917,7 +917,7 @@ public class Trampoline2 implements iLaunchable {
 
 		String extensionsDir = SystemProperties.getProperty("extensions.dir", "../../extensions/");
 		Trampoline2.trampoline.addExtensionsDirectory(new File(extensionsDir));
-		String extensionsDir2 = System.getProperty("user.home") + "/Library/Application Support/Field/extensions";
+		String extensionsDir2 = System.getProperty("user.home") + "/.field/extensions";
 
 		if (!new File(extensionsDir2).exists())
 			new File(extensionsDir2).mkdirs();

@@ -688,7 +688,7 @@ public class PluginList {
 	}
 
 	File extensionsDir = new File(SystemProperties.getProperty("extensions.dir", "../../extensions/"));
-	File extensionsDir2 = new File(System.getProperty("user.home") + "/Library/Application Support/Field/extensions");
+	File extensionsDir2 = new File(System.getProperty("user.home") + "/.field/extensions");
 
 	private void reconstructRootModel() {
 		PluginOrExtensionNode root = new PluginOrExtensionNode("root", true);
@@ -831,7 +831,7 @@ public class PluginList {
 			if (!f.renameTo(new File(ap.substring(0, ap.length() - 1)))) {
 
 				System.err.println(" problem flipping file, using local extensions dir instead");
-				new ExecuteCommand("/bin/cp", new String[] { ap, System.getProperty("user.home") + "/Library/Application Support/Field/extensions/" + ap.substring(0, ap.length() - 1) }, true).waitFor();
+				new ExecuteCommand("/bin/cp", new String[] { ap, System.getProperty("user.home") + "/.field/extensions/" + ap.substring(0, ap.length() - 1) }, true).waitFor();
 			}
 		} else {
 			;//System.out.println(" rename to " + new File(ap + "_"));

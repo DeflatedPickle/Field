@@ -37,7 +37,7 @@ public class FastClassLoader extends URLClassLoader {
 	long loadedmaphash = -1;
 
 	{
-		final String filename = System.getProperty("user.home") + "/Library/Application Support/Field" + "/classmap.xml";
+		final String filename = System.getProperty("user.home") + "/.field" + "/classmap.xml";
 		try {
 
 			ObjectInputStream ois = new ObjectInputStream(new BufferedInputStream(new FileInputStream(new File(filename))));

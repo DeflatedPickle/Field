@@ -402,7 +402,7 @@ public class FieldMenus2 {
 
 	}
 
-	static public String fieldDir = System.getProperty("user.home") + "/Library/Application Support/Field";
+	static public String fieldDir = System.getProperty("user.home") + "/.field";
 	static {
 		getFieldDir();
 	}

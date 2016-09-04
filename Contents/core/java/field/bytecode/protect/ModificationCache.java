@@ -71,7 +71,7 @@ public class ModificationCache {
 	
 	public <T> T persist(String name, T defaultValue) {
 		T t = defaultValue;
-		final String filename = System.getProperty("user.home") + "/Library/Application Support/Field" + "/" + name + ".xml";
+		final String filename = System.getProperty("user.home") + "/.field" + "/" + name + ".xml";
 		try {
 
 			ObjectInputStream ois = new ObjectInputStream(new BufferedInputStream(new FileInputStream(new File(filename))));
