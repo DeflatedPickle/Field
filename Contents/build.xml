@@ -97,6 +97,9 @@
         <fileset dir="./lib/">
           <include name="*.jar"/>
         </fileset>
+        <fileset dir="extras/jsrscripting/">
+          <include name="*.jar"/>
+        </fileset>
       </classpath>
     </javac>
   </target>

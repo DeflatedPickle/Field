@@ -40,13 +40,13 @@ public class JSRPlugin extends BaseSimplePlugin {
 		knownLanguages.put("Clojure", ClojureScriptingInterface.class.getName());
 		knownLanguages.put("JRuby", JRubyScriptingInterface.class.getName());
 		knownLanguages.put("Nashorn", NashornScriptingInterface.class.getName());
-		knownLanguages.put("Scala", ScalaScriptingInterface.class.getName());
+		//knownLanguages.put("Scala", ScalaScriptingInterface.class.getName());
 
 		knownTests.put("JavaC", JavaCScriptingInterface.class.getName());
 		knownTests.put("Clojure", ClojureScriptingInterface.class.getName());
 		knownTests.put("JRuby", JRubyScriptingInterface_test.class.getName());
 		knownTests.put("Nashorn", NashornScriptingInterface.class.getName());
-		knownTests.put("Scala", ScalaScriptingInterface.class.getName());
+		//knownTests.put("Scala", ScalaScriptingInterface.class.getName());
 
 	}
 
