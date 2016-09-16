@@ -2,6 +2,9 @@
 ###################
 *.class
 
+# temp copy of old jython/Lib
+python_/
+*.jar_
 
 # um, that jdk
 *.jdk
